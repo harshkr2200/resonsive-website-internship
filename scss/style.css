@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.navbar .Contanier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar .navbar_logo {
+  margin: 1.6rem 2.5rem;
+}
+.navbar .navbar_logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.navbar .navbar_menu {
+  margin-right: 3.5rem;
+}
+.navbar .navbar_menu a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 1.3rem;
+  color: black;
+  font-weight: 300;
+}
+.navbar .navbar_menu a:hover {
+  color: red;
+}
+
+.Section {
+  padding: 0.5rem;
+  grid-column: 1/-1;
+}
+.Section .card_contanier {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 96%;
+  margin-top: 2em;
+  margin: 3em auto;
+  padding: 1em;
+}
+.Section .card_contanier .left_card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 32%;
+  padding-left: 1.5em;
+  transition: transform 0.4s;
+}
+.Section .card_contanier .left_card:hover {
+  transform: scale(0.9);
+  color: red;
+}
+.Section .card_contanier .middle_card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 32%;
+  margin: 1em;
+  transition: transform 0.4s;
+  padding-top: 5em;
+}
+.Section .card_contanier .middle_card:hover {
+  transform: scale(0.9);
+  color: red;
+}
+.Section .card_contanier .right_card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 32%;
+  transition: transform 0.4s;
+}
+.Section .card_contanier .right_card:hover {
+  transform: scale(0.9);
+  color: red;
+}
+.Section .card_contanier h4 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .Contanier {
+    display: block;
+  }
+  .navbar_logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+  }
+  .navbar_menu {
+    width: 100%;
+    margin: 0rem 2rem;
+    margin-left: 3.3rem;
+    padding: 0rem 1.5rem;
+    background: rgb(238, 174, 202);
+  }
+  .navbar_menu a {
+    display: block;
+    text-align: center;
+  }
+  .card_contanier {
+    display: block;
+    flex-direction: column;
+  }
+  .card__section {
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@mixin contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin card{
+    // border: 2px solid red;
+   display: flex;
+   justify-content: space-between;
+    height: 80vh;
+    width: 96%;
+    margin-top: 2em;
+    // grid-gap: 1.6em;
+    margin: 3em auto;
+    padding: 1em;
+}

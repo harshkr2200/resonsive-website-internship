@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,400;1,500&display=swap");
+@import "_var.scss";
+@import "_main_style.scss";
+@import "_main.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.navbar {
+  //   border: 2px solid yellow;
+  box-shadow: $box__shadow;
+  .Contanier {
+    @include contanier;
+  }
+
+  .navbar_logo {
+    margin: 1.6rem 2.5rem;
+  }
+
+  .navbar_logo a {
+    @include logo;
+  }
+
+  .navbar_menu {
+    margin-right: 3.5rem;
+  }
+
+  .navbar_menu a {
+    @include menu;
+  }
+
+  .navbar_menu a:hover {
+    color: red;
+  }
+}
+
+.Section {
+  padding: 0.5rem;
+  grid-column: 1/-1;
+
+  .card_contanier {
+    @include card;
+
+    .left_card {
+      @include back;
+      padding-left: 1.5em;
+      transition: transform 0.4s;
+    }
+
+    .left_card:hover {
+      @include hover;
+    }
+
+    .middle_card {
+      @include back;
+      margin: 1em;
+      transition: transform 0.4s;
+      padding-top: 5em;
+    }
+
+    .middle_card:hover {
+      @include hover;
+    }
+
+    .right_card {
+      @include back;
+      transition: transform 0.4s;
+    }
+
+    .right_card:hover {
+      @include hover;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Contanier {
+    display: block;
+  }
+
+  .navbar_logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+  }
+
+  .navbar_menu {
+    width: 100%;
+    margin: 0rem 2rem;
+    margin-left: 3.3rem;
+    padding: 0rem 1.5rem;
+    background: rgb(238, 174, 202);
+  }
+
+  .navbar_menu a {
+    display: block;
+    text-align: center;
+  }
+
+  .card_contanier {
+    display: block;
+    flex-direction: column;
+    // margin: 1rem;
+  }
+
+  .card__section {
+    width: 100%;
+    // padding-left: 2rem;
+    margin-left: 0.5rem;
+  }
+}
